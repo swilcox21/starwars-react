@@ -4,7 +4,10 @@ import Proptypes from "prop-types";
 export const NavBar = () => {
 	return (
 		<nav className="navbar navbar-dark" id="myNavBar">
-			<span className="navbar-brand mb-0 h1 pl-5">Navbar</span>
+			<span className="navbar-brand mb-0 h1 pl-5">
+				<i className="fab fa-jedi-order" />
+				&nbsp; &nbsp; STAR WARS
+			</span>
 			<span className="nav-item dropdown pr-5">
 				<a
 					className="nav-link dropdown-toggle"
@@ -14,7 +17,7 @@ export const NavBar = () => {
 					data-toggle="dropdown"
 					aria-haspopup="true"
 					aria-expanded="false">
-					Dropdown
+					Favorites
 				</a>
 				<div className="dropdown-menu" aria-labelledby="navbarDropdown">
 					<a className="dropdown-item" href="#">

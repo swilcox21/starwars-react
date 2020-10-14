@@ -12,6 +12,7 @@ export class Home extends React.Component {
 			planets: ["death star", "tatooine"]
 		};
 	}
+
 	componentDidMount() {
 		fetch("https://swapi.dev/api/people/")
 			.then(resp => {
@@ -36,16 +37,17 @@ export class Home extends React.Component {
 				console.log("Looks like there was a problem: \n", error);
 			});
 	}
+
 	render() {
 		return (
 			<div className="wrapper">
 				<NavBar />
-				<div className="d-flex mt-5">
+				<div className="d-flex mt-5 scrollbar">
 					{this.state.characters.map((character, index) => (
 						<Character key={index} char={character} />
 					))}
 				</div>
-				<div className="d-flex mt-5">
+				<div className="d-flex mt-5 scrollbar mb-5">
 					{this.state.planets.map((planet, index) => (
 						<Planet key={index} plan={planet} />
 					))}

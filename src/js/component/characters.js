@@ -19,9 +19,14 @@ export const Character = props => {
 						<p>Wieght: {props.char.mass}</p>
 						<p>Skin Color: {props.char.skin_color}</p>
 					</div>
-					<a href="#" className="btn btn-primary">
-						Go somewhere
-					</a>
+					<div className="d-flex justify-content-between">
+						<a href="#" className="btn learnMore">
+							Go somewhere
+						</a>
+						<a href="#" className="btn heart">
+							<i className="far fa-heart" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

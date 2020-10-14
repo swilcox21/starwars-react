@@ -6,7 +6,7 @@ export const Planet = props => {
 		<div className="planetsContainer mx-3 mt-5">
 			<div className="card" style={{ width: "18rem" }}>
 				<img
-					src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSp14vu4t7r_4vUAHVHy-5YWyEyi-U-_8qcbA&usqp=CAU"
+					src="https://media.moddb.com/images/groups/1/9/8071/Blockade.jpg"
 					className="card-img-top"
 					alt="..."
 				/>
@@ -16,9 +16,14 @@ export const Planet = props => {
 						Some quick example text to build on the card title and
 						make up the bulk of the cards content.
 					</p>
-					<a href="#" className="btn btn-primary">
-						Go somewhere
-					</a>
+					<div className="d-flex justify-content-between">
+						<a href="#" className="btn learnMore">
+							Go somewhere
+						</a>
+						<a href="#" className="btn heart">
+							<i className="far fa-heart" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
